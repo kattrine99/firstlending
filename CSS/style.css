@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'TT Hoves',sans-serif;
+    color: #222;
+}
+section{
+    padding: 0 calc(24px + (121 - 24) * ((100vw - 376px) / (1280 - 375)));
+}
+section.hello{
+    padding-top: 40px;
+    background-image: url('../Images/html_css_js.png');
+    background-repeat: no-repeat;
+    background-position: top 20px right 40px;
+    background-size: 35%;
+}
+.logo{
+   height: calc(30px + (41 - 30) * ((100vw - 376px) / (1280 - 375)));
+}
+.courseInfo{
+    display: flex;
+    gap: 30px 160px;
+    flex-wrap: wrap;
+    margin-top: calc(28px + (85 - 28) * ((100vw - 376px) / (1280 - 375)));
+    margin-bottom: calc(48px + (76 - 48) * ((100vw - 376px) / (1280 - 375)));
+
+}
+.courseData{
+    font-size: 21px;
+    line-height: 140%;
+}
+.courseData .value{
+    font-weight: 700;
+
+}
+h1{
+    font-family: 'Chava' , sans-serif;
+    font-size: calc(42px + (80 - 42) * ((100vw - 376px) / (1280 - 375)));
+    line-height: 110%;   
+}
+p {
+    margin-top: calc(20px + (40 - 20) * ((100vw - 376px) / (1280 - 375)));
+    font-size:calc(18px + (27 - 18) * ((100vw - 376px) / (1280 - 375)));
+    font-weight: 300;
+    line-height: 140%;
+}
+.cta{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 30px;
+}
+button{
+    width: 328px;
+    padding: 20px 0px;
+    border-radius: 12px;
+
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 117%;
+}
+.purple{
+    background-color:#6E3ABA;
+    color:#fff;
+    border: 1px solid #6E3ABA;
+}
+.white{
+    background-color:#fff;
+    color:#6E3ABA;
+    border: 1px solid #6E3ABA;
+}
+
+section.CourseforYou{
+    margin-top: calc(60px + (160 - 60) * ((100vw - 376px) / (1280 - 375)));
+    margin-bottom: 160px;
+}
+h2{
+    width: calc(328px + (769 - 328) * ((100vw - 376px) / (1280 - 375)));
+    font-size: calc(34px + (58 - 34) * ((100vw - 376px) / (1280 - 375)));
+    font-weight: 500;
+    line-height: 117%;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+
+}
+.personType{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 70px; 
+    margin-top:calc(40px + (90 - 40) * ((100vw - 376px) / (1280 - 375)));
+}
+.person{
+    margin-top:calc(40px + (52 - 40) * ((100vw - 376px) / (1280 - 375)));
+    width: calc(328px + (450 - 328) * ((100vw - 376px) / (1280 - 375)));
+}
+.title{
+    font-size: 27px;
+    font-weight:600;
+    line-height: 140%;
+}
+.explanation{
+font-size: 27px;
+line-height: 140%;
+}
