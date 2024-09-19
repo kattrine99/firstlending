@@ -71,7 +71,7 @@ button{
     border: 1px solid #6E3ABA;
 }
 
-section.CourseforYou{
+.CourseforYou{
     margin-top: calc(60px + (160 - 60) * ((100vw - 376px) / (1280 - 375)));
     margin-bottom: 160px;
 }
@@ -80,7 +80,6 @@ h2{
     font-size: calc(34px + (58 - 34) * ((100vw - 376px) / (1280 - 375)));
     font-weight: 500;
     line-height: 117%;
-    letter-spacing: 0.01em;
     text-transform: uppercase;
 
 }
@@ -93,6 +92,10 @@ h2{
 .person{
     margin-top:calc(40px + (52 - 40) * ((100vw - 376px) / (1280 - 375)));
     width: calc(328px + (450 - 328) * ((100vw - 376px) / (1280 - 375)));
+}
+.person img {
+    width: 210px;
+    height: 210px;
 }
 .type{
     font-size: 27px;
