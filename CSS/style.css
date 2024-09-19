@@ -69,19 +69,18 @@ button{
     background-color:#fff;
     color:#6E3ABA;
     border: 1px solid #6E3ABA;
+    cursor: pointer;
 }
-
 .CourseforYou{
     margin-top: calc(60px + (160 - 60) * ((100vw - 376px) / (1280 - 375)));
     margin-bottom: 160px;
 }
-h2{
+.CourseforYou h2{
     width: calc(328px + (769 - 328) * ((100vw - 376px) / (1280 - 375)));
     font-size: calc(34px + (58 - 34) * ((100vw - 376px) / (1280 - 375)));
     font-weight: 500;
     line-height: 117%;
     text-transform: uppercase;
-
 }
 .personType{
     display: flex;
@@ -105,4 +104,35 @@ h2{
 .explanation{
 font-size: 27px;
 line-height: 140%;
+}
+
+.saleContainer{
+    padding: calc(4.4vw + 23px) 0 calc(5.3vw + 20px);
+    background-color:#6E3ABA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.saleContainer h3{
+    font-size: calc(2vw + 26.5px);
+    margin-bottom:calc(4.1vw + 4.7px) ;
+    font-weight: 700;
+    line-height:117%;
+    letter-spacing: 0.03em;
+    color:#fff;
+}
+.saleContainer .timer{
+    display: flex;
+    gap: 30px;
+}
+.period {
+    width: auto;
+    font-size: calc(12.6vw + 12.8px);
+    font-family: 'Chava', sans-serif;
+}
+.timeCard span{
+    font-size: calc(1.9vw + 3px);
+    display: block;
+    text-align: center;
+    margin-bottom: calc(4vw + 6.1px);
 }
