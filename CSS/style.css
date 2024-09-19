@@ -95,7 +95,7 @@ h2{
     margin-top:calc(40px + (52 - 40) * ((100vw - 376px) / (1280 - 375)));
     width: calc(328px + (450 - 328) * ((100vw - 376px) / (1280 - 375)));
 }
-.title{
+.type{
     font-size: 27px;
     font-weight:600;
     line-height: 140%;
