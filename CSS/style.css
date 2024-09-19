@@ -128,7 +128,7 @@ line-height: 140%;
 }
 .period {
     width: auto;
-    font-size: calc(12.6vw + 12.8px);
+    font-size: calc(13.1vw + 5.7px);
     line-height: 107%;
     font-family: 'Chava', sans-serif;
 }
