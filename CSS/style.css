@@ -13,8 +13,8 @@ section.hello{
     padding-top: 40px;
     background-image: url('../Images/html_css_js.png');
     background-repeat: no-repeat;
-    background-position: top 20px right 40px;
-    background-size: 35%;
+    background-position: top 121px right 58px;
+    background-size: calc(24vw + 89.5px);
 }
 .logo{
    height: calc(30px + (41 - 30) * ((100vw - 376px) / (1280 - 375)));
