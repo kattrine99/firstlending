@@ -96,14 +96,16 @@ button{
     width: 210px;
     height: 210px;
 }
-.type{
+.type, .Wedo{
     font-size: 27px;
     font-weight:600;
     line-height: 140%;
+    text-transform: uppercase;
 }
-.explanation{
+.explanation, .def{
 font-size: 27px;
 line-height: 140%;
+
 }
 
 .saleContainer{
@@ -137,4 +139,23 @@ line-height: 140%;
     display: block;
     text-align: center;
     margin-bottom: calc(4vw + 6.1px);
+}
+.Devfor2months{
+    margin: calc(11vw + 18.6px) 0;
+}
+.Devfor2monthsHead{
+    width: calc(76.7vw + 40.4px);
+    font-size: calc(2.7vw + 24px);
+    font-weight: 500;
+    line-height: 117.8%;
+    text-transform: uppercase;
+}
+.textInfo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 120px 90px;
+    margin: calc(7.7vw + -9px) 0;
+}
+.textCard{
+    width: calc(8vw + 298px);
 }
