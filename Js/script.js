@@ -23,6 +23,16 @@ function sale(){
         timerValue[2].innerHTML='00' + ":";
         timerValue[3].innerHTML='00';
     }
+    timerValue[4].innerHTML=correctDate(day) + ":";
+    timerValue[5].innerHTML=correctDate(hours) + ":";
+    timerValue[6].innerHTML=correctDate(minutes) + ":";
+    timerValue[7].innerHTML=correctDate(seconds);
+    if(date<=0){
+        timerValue[4].innerHTML='00' + ":";
+        timerValue[5].innerHTML='00' + ":";
+        timerValue[6].innerHTML='00' + ":";
+        timerValue[7].innerHTML='00';
+    }
 }
 sale();
 setInterval(()=>{
