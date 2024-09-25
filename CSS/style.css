@@ -1,13 +1,18 @@
 *{
     padding: 0;
     margin: 0;
+    /* outline: 1px solid red; */
+    
 }
 body{
     font-family: 'TT Hoves',sans-serif;
     color: #222;
+   
 }
 section{
     padding: 0 calc(24px + (121 - 24) * ((100vw - 376px) / (1280 - 375)));
+    margin-bottom: calc(11vw + 18.6px);
+    
 }
 section.hello{
     padding-top: 40px;
@@ -71,11 +76,51 @@ button{
     border: 1px solid #6E3ABA;
     cursor: pointer;
 }
+.Tutor{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 51px;
+    
+}
+.TutorImg{
+    flex-basis: 250px;
+    flex-grow: 1;
+}
+.TutorImg img {
+    width: 100%;
+}
+.TutorInfo{
+    flex-basis: 300px;
+    flex-grow: 3;
+}
+.TutorInfo h4{
+    font-size: calc(1.1vw + 33.8px);
+    font-weight: 700;
+    line-height: 120%;
+}
+.TutorSkills{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: calc(30px + (40 - 30) * ((100vw - 376px) / (1280 - 375)));
+    column-gap:calc(10px + (90 - 10) * ((100vw - 376px) / (1280 - 375)));
+    margin-top: calc(5.5vw + 19.3px);
+}   
+.skill img{
+    width: 36px;
+    height: 36px;
+}
+.skill span{
+    display: block;
+    margin-top: 10px;
+    font-size: calc(16px + (21 - 16) * ((100vw - 376px) / (1280 - 375)));
+    line-height: 140%;
+}
 .CourseforYou{
     margin-top: calc(60px + (160 - 60) * ((100vw - 376px) / (1280 - 375)));
     margin-bottom: 160px;
 }
-.CourseforYou h2{
+h2{
     width: calc(328px + (769 - 328) * ((100vw - 376px) / (1280 - 375)));
     font-size: calc(34px + (58 - 34) * ((100vw - 376px) / (1280 - 375)));
     font-weight: 500;
@@ -107,7 +152,6 @@ font-size: 27px;
 line-height: 140%;
 
 }
-
 .saleContainer{
     padding: calc(4.4vw + 23px) 0 calc(5.3vw + 20px);
     background-color:#6E3ABA;
@@ -133,6 +177,7 @@ line-height: 140%;
     font-size: calc(13.1vw + 5.7px);
     line-height: 107%;
     font-family: 'Chava', sans-serif;
+    font-weight: 400;
 }
 .timeCard span{
     font-size: calc(1.9vw + 3px);
@@ -158,4 +203,91 @@ line-height: 140%;
 }
 .textCard{
     width: calc(8vw + 298px);
+}
+
+.legend h2{
+    margin-bottom:calc(5.5vw + 19px) ;
+}
+/* ----- медиа запрос для создания экрана № 7 ----- */
+@media screen and (min-width : 900px)
+{
+.DiplomaContainer{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 19px 20px;
+}
+
+.DiplomaImg{
+    grid-row: 1/3;
+}
+.DiplomaImg img{
+    width: 100%;
+    height: auto;
+}
+.DiplomaHeader h2{
+    width:calc(328px + (578 - 328) * ((100vw - 376px) / (1280 - 375)));
+}
+.DiplomaInfo p{
+    margin-top: 0;
+}
+}
+
+@media screen and (max-width: 900px) {
+    .DiplomaContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 19px 20px;
+    }
+    
+    .DiplomaImg{
+        grid-row: 2/3;
+    }
+    .DiplomaImg img{
+        width: 100%;
+        height: auto;
+    }
+    .DiplomaInfo p{
+        margin-top: 0;
+    }
+}
+.SalaryHeader {
+    width:calc(328px + (729 - 328) * ((100vw - 376px) / (1280 - 375)));
+}
+.SalaryInfo {
+    width:calc(328px + (876 - 328) * ((100vw - 376px) / (1280 - 375)));
+    margin-top: calc(2.2vw + 11.7px);
+}
+
+.VacanciesImg {
+    margin-top:calc(1.8vw + 13.4px);
+}
+
+.VacanciesImg img{
+    width: 100%;
+    height: auto;
+}
+.Merge{
+    width:calc(55.2vw + 121px);
+}
+.StBox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px 52px;
+    margin-top: calc(3.3vw + 17.6px);
+}
+.MergeImg{
+    width: calc(11.3vw + 285.7px);
+    height: calc(7.8vw + 199.6px);
+}
+.MergeImg img{
+    width: 100%;
+    height: 100%;
+}
+.BoxDescription{
+    width: calc(21.2vw + 248.4px);
+}
+.BoxDescription p{
+    font-size: 21px;
+    line-height: 140%;
 }
