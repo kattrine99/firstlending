@@ -208,48 +208,6 @@ line-height: 140%;
 .legend h2{
     margin-bottom:calc(5.5vw + 19px) ;
 }
-/* ----- медиа запрос для создания экрана № 7 ----- */
-@media screen and (min-width : 900px)
-{
-.DiplomaContainer{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 19px 20px;
-}
-
-.DiplomaImg{
-    grid-row: 1/3;
-}
-.DiplomaImg img{
-    width: 100%;
-    height: auto;
-}
-.DiplomaHeader h2{
-    width:calc(328px + (578 - 328) * ((100vw - 376px) / (1280 - 375)));
-}
-.DiplomaInfo p{
-    margin-top: 0;
-}
-}
-
-@media screen and (max-width: 900px) {
-    .DiplomaContainer{
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 19px 20px;
-    }
-    
-    .DiplomaImg{
-        grid-row: 2/3;
-    }
-    .DiplomaImg img{
-        width: 100%;
-        height: auto;
-    }
-    .DiplomaInfo p{
-        margin-top: 0;
-    }
-}
 .SalaryHeader {
     width:calc(328px + (729 - 328) * ((100vw - 376px) / (1280 - 375)));
 }
@@ -290,4 +248,145 @@ line-height: 140%;
 .BoxDescription p{
     font-size: 21px;
     line-height: 140%;
+}
+
+.CourseProgram{
+    border: 2px solid #000;
+    padding: calc(40px + (80 - 40) * ((100vw - 376px) / (1280 - 375)))
+    calc(20px + (52 - 20) * ((100vw - 376px) / (1280 - 375)))
+    calc(23px + (35 - 23) * ((100vw - 376px) / (1280 - 375)));
+    position: relative;
+}
+.CourseProgram h2{
+    width: calc(242px + (838 - 242) * ((100vw - 376px) / (1280 - 375)));
+}
+ #corner{
+    width:calc(40px + (140 - 40) * ((100vw - 376px) / (1280 - 375)));
+    position: absolute;
+    top: -2px;
+    right: -2px;
+}
+.Lessons{
+    margin-top: calc(24px + (40 - 24) * ((100vw - 376px) / (1280 - 375)));
+    margin-bottom: calc(23px + (34 - 23) * ((100vw - 376px) / (1280 - 375)));;
+}
+ul{
+    list-style-type: none;
+}
+.Lessons li{
+    border-bottom: 1px solid #a1a1a1;
+    padding: 24px 0;
+    font-size: calc(1.9vw + 3px);
+    line-height:140%;
+}
+.Lessons li:first-child{
+    padding-top: 0;
+}
+.ProgramContainer button{
+    display: block;
+    margin: 0 auto;
+}
+.mobile {
+    display: none !important;
+}
+.reviews h2{
+    width: calc(328px + (838 - 328) * ((100vw - 376px) / (1280 - 375)));
+}
+.feedbacks{
+    display: flex;
+    gap:30px ;
+    flex-wrap: wrap;
+    margin: calc(2.2vw + 11.7px) 0;
+
+}
+.feedback{
+    width: calc(328px + (335 - 328) * ((100vw - 376px) / (1280 - 375)));
+    background-color:#F0F7FD;
+    border-radius:12px;
+    padding: 50px 20px 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.feedbackText img{
+    width: 38px;
+    height: 38px;
+}
+.student{
+    display: flex;
+    flex-direction:row;
+}
+.student img{
+    width: 72px;
+    height: 72px;
+    border-radius:100%;
+}
+.studentInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 16px;
+}
+.studentName{
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+}
+/* ----- медиа запросы ----- */
+@media screen and (min-width : 900px)
+{
+.DiplomaContainer{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 19px 20px;
+}
+
+.DiplomaImg{
+    grid-row: 1/3;
+}
+.DiplomaImg img{
+    width: 100%;
+    height: auto;
+}
+.DiplomaHeader h2{
+    width:calc(328px + (578 - 328) * ((100vw - 376px) / (1280 - 375)));
+}
+.DiplomaInfo p{
+    margin-top: 0;
+}
+}
+
+@media screen and (max-width: 900px) {
+    .DiplomaContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 19px 20px;
+    }
+    .DiplomaImg{
+        grid-row: 2/3;
+    }
+    .DiplomaImg img{
+        width: 100%;
+        height: auto;
+    }
+    .DiplomaInfo p{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .mobile {
+        display: block !important;
+    }
+    .desktop{
+        display: none !important;
+    }
+    .ProgramContainer button{
+        margin-top: 30px;
+    }
+    .Lessons li:last-child{
+        border: 0;
+        padding-bottom: 0;
+    }
 }
