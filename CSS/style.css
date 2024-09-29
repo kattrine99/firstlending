@@ -69,12 +69,31 @@ button{
     background-color:#6E3ABA;
     color:#fff;
     border: 1px solid #6E3ABA;
+    cursor: pointer;
+}
+.purple:hover{
+    background-color:hsl(0, 0%, 100%);
+    color:#6E3ABA;
+    border: 1px solid #6E3ABA;
+}
+.purple:active{
+    background-color:#40226c;
+    color:#fff;
 }
 .white{
     background-color:#fff;
     color:#6E3ABA;
     border: 1px solid #6E3ABA;
     cursor: pointer;
+}
+.white:hover{
+    background-color:#3f1f6e;
+    color:#fff;
+    border: 1px solid #6E3ABA;
+}
+.white:active{
+    background-color:#40226c;
+    color:#fff;
 }
 .Tutor{
     display: flex;
@@ -333,7 +352,37 @@ ul{
     font-size: 18px;
     line-height: 150%;
 }
-
+.InfoAU{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:calc(34px + (80 - 34) * ((100vw - 376px) / (1280 - 375)));
+    gap:40px 97px;
+}
+.Inform{
+    width: calc(328px + (461 - 328) * ((100vw - 376px) / (1280 - 375)));
+}
+.Inform p{
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 140%;
+    text-transform: uppercase;
+}
+.Inform img{
+    width: 110px;
+    height: 110px;
+}
+.InformGrad{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.Grad{
+    margin-top: 40px;
+}
+.InformGrad .Grad span{
+    margin-top: 8px;
+}
+/* Всплывающее окно */
 .wrapper{
     position: fixed;
     top: 0;
