@@ -14,6 +14,8 @@ section{
     margin-bottom: calc(11vw + 18.6px);
     
 }
+
+/*Окно о курсе, вводное окно*/
 section.hello{
     padding-top: 40px;
     background-image: url('../Images/html_css_js.png');
@@ -71,29 +73,87 @@ button{
     border: 1px solid #6E3ABA;
     cursor: pointer;
 }
-.purple:hover{
-    background-color:hsl(0, 0%, 100%);
-    color:#6E3ABA;
-    border: 1px solid #6E3ABA;
-}
-.purple:active{
-    background-color:#40226c;
-    color:#fff;
-}
 .white{
     background-color:#fff;
     color:#6E3ABA;
     border: 1px solid #6E3ABA;
     cursor: pointer;
 }
-.white:hover{
-    background-color:#3f1f6e;
-    color:#fff;
-    border: 1px solid #6E3ABA;
+/* Окно Курс для тебя */
+.CourseforYou{
+    margin-top: calc(60px + (160 - 60) * ((100vw - 376px) / (1280 - 375)));
+    margin-bottom: 160px;
 }
-.white:active{
-    background-color:#40226c;
+h2{
+    width: calc(328px + (769 - 328) * ((100vw - 376px) / (1280 - 375)));
+    font-size: calc(34px + (58 - 34) * ((100vw - 376px) / (1280 - 375)));
+    font-weight: 500;
+    line-height: 117%;
+    text-transform: uppercase;
+}
+.personType{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 70px; 
+    margin-top:calc(40px + (90 - 40) * ((100vw - 376px) / (1280 - 375)));
+}
+.person{
+    margin-top:calc(40px + (52 - 40) * ((100vw - 376px) / (1280 - 375)));
+    width: calc(328px + (450 - 328) * ((100vw - 376px) / (1280 - 375)));
+}
+.person img {
+    width: 210px;
+    height: 210px;
+}
+.type, .Wedo{
+    font-size: 27px;
+    font-weight:600;
+    line-height: 140%;
+    text-transform: uppercase;
+}
+.explanation, .def{
+font-size: 27px;
+line-height: 140%;
+
+}
+/* Окно с таймером скидки */
+.saleContainer{
+    padding: calc(4.4vw + 23px) 0 calc(5.3vw + 20px);
+    background-color:#6E3ABA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.saleContainer h3{
+    text-align: center;
+    font-size: calc(2vw + 26.5px);
+    margin-bottom:calc(4.1vw + 4.7px) ;
+    font-weight: 700;
+    line-height:117%;
+    letter-spacing: 0.03em;
     color:#fff;
+}
+.saleContainer .timer{
+    display: flex;
+    gap: ccalc(5.5vw + 9.3px);
+}
+.period {
+    width: auto;
+    font-size: calc(13.1vw + 5.7px);
+    line-height: 107%;
+    font-family: 'Chava', sans-serif;
+    font-weight: 400;
+}
+.timeCard span{
+    font-size: calc(1.9vw + 3px);
+    display: block;
+    text-align: center;
+    margin-bottom: calc(4vw + 6.1px);
+}
+
+/* Окно о Легенде (Юрий Каграманян) */
+.legend h2{
+    margin-bottom:calc(5.5vw + 19px) ;
 }
 .Tutor{
     display: flex;
@@ -135,75 +195,8 @@ h4{
     font-size: calc(16px + (21 - 16) * ((100vw - 376px) / (1280 - 375)));
     line-height: 140%;
 }
-.CourseforYou{
-    margin-top: calc(60px + (160 - 60) * ((100vw - 376px) / (1280 - 375)));
-    margin-bottom: 160px;
-}
-h2{
-    width: calc(328px + (769 - 328) * ((100vw - 376px) / (1280 - 375)));
-    font-size: calc(34px + (58 - 34) * ((100vw - 376px) / (1280 - 375)));
-    font-weight: 500;
-    line-height: 117%;
-    text-transform: uppercase;
-}
-.personType{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px 70px; 
-    margin-top:calc(40px + (90 - 40) * ((100vw - 376px) / (1280 - 375)));
-}
-.person{
-    margin-top:calc(40px + (52 - 40) * ((100vw - 376px) / (1280 - 375)));
-    width: calc(328px + (450 - 328) * ((100vw - 376px) / (1280 - 375)));
-}
-.person img {
-    width: 210px;
-    height: 210px;
-}
-.type, .Wedo{
-    font-size: 27px;
-    font-weight:600;
-    line-height: 140%;
-    text-transform: uppercase;
-}
-.explanation, .def{
-font-size: 27px;
-line-height: 140%;
 
-}
-.saleContainer{
-    padding: calc(4.4vw + 23px) 0 calc(5.3vw + 20px);
-    background-color:#6E3ABA;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.saleContainer h3{
-    text-align: center;
-    font-size: calc(2vw + 26.5px);
-    margin-bottom:calc(4.1vw + 4.7px) ;
-    font-weight: 700;
-    line-height:117%;
-    letter-spacing: 0.03em;
-    color:#fff;
-}
-.saleContainer .timer{
-    display: flex;
-    gap: ccalc(5.5vw + 9.3px);
-}
-.period {
-    width: auto;
-    font-size: calc(13.1vw + 5.7px);
-    line-height: 107%;
-    font-family: 'Chava', sans-serif;
-    font-weight: 400;
-}
-.timeCard span{
-    font-size: calc(1.9vw + 3px);
-    display: block;
-    text-align: center;
-    margin-bottom: calc(4vw + 6.1px);
-}
+/* Окно с информацией что будет за 2 месяца */
 .Devfor2months{
     margin: calc(11vw + 18.6px) 0;
 }
@@ -224,9 +217,48 @@ line-height: 140%;
     width: calc(8vw + 298px);
 }
 
-.legend h2{
-    margin-bottom:calc(5.5vw + 19px) ;
+/* Программа курса, экран с треугольником в углу */
+.CourseProgram{
+    border: 2px solid #000;
+    padding: calc(40px + (80 - 40) * ((100vw - 376px) / (1280 - 375)))
+    calc(20px + (52 - 20) * ((100vw - 376px) / (1280 - 375)))
+    calc(23px + (35 - 23) * ((100vw - 376px) / (1280 - 375)));
+    position: relative;
 }
+.CourseProgram h2{
+    width: calc(242px + (838 - 242) * ((100vw - 376px) / (1280 - 375)));
+}
+ #corner{
+    width:calc(40px + (140 - 40) * ((100vw - 376px) / (1280 - 375)));
+    position: absolute;
+    top: -2px;
+    right: -2px;
+}
+.Lessons{
+    margin-top: calc(24px + (40 - 24) * ((100vw - 376px) / (1280 - 375)));
+    margin-bottom: calc(23px + (34 - 23) * ((100vw - 376px) / (1280 - 375)));
+}
+ul{
+    list-style-type: none;
+}
+.Lessons li{
+    border-bottom: 1px solid #a1a1a1;
+    padding: 24px 0;
+    font-size: calc(1.9vw + 3px);
+    line-height:140%;
+}
+.Lessons li:first-child{
+    padding-top: 0;
+}
+.ProgramContainer button{
+    display: block;
+    margin: 0 auto;
+}
+.mobile {
+    display: none !important;
+}
+
+/* Окно об вакансиях с hh.uz */
 .SalaryHeader {
     width:calc(328px + (729 - 328) * ((100vw - 376px) / (1280 - 375)));
 }
@@ -243,6 +275,8 @@ line-height: 140%;
     width: 100%;
     height: auto;
 }
+
+/* Окно с merge*/
 .Merge{
     width:calc(55.2vw + 121px);
 }
@@ -269,45 +303,7 @@ line-height: 140%;
     line-height: 140%;
 }
 
-.CourseProgram{
-    border: 2px solid #000;
-    padding: calc(40px + (80 - 40) * ((100vw - 376px) / (1280 - 375)))
-    calc(20px + (52 - 20) * ((100vw - 376px) / (1280 - 375)))
-    calc(23px + (35 - 23) * ((100vw - 376px) / (1280 - 375)));
-    position: relative;
-}
-.CourseProgram h2{
-    width: calc(242px + (838 - 242) * ((100vw - 376px) / (1280 - 375)));
-}
- #corner{
-    width:calc(40px + (140 - 40) * ((100vw - 376px) / (1280 - 375)));
-    position: absolute;
-    top: -2px;
-    right: -2px;
-}
-.Lessons{
-    margin-top: calc(24px + (40 - 24) * ((100vw - 376px) / (1280 - 375)));
-    margin-bottom: calc(23px + (34 - 23) * ((100vw - 376px) / (1280 - 375)));;
-}
-ul{
-    list-style-type: none;
-}
-.Lessons li{
-    border-bottom: 1px solid #a1a1a1;
-    padding: 24px 0;
-    font-size: calc(1.9vw + 3px);
-    line-height:140%;
-}
-.Lessons li:first-child{
-    padding-top: 0;
-}
-.ProgramContainer button{
-    display: block;
-    margin: 0 auto;
-}
-.mobile {
-    display: none !important;
-}
+/* Слайдер отзывы студентов */
 .reviews h2{
     width: calc(328px + (838 - 328) * ((100vw - 376px) / (1280 - 375)));
 }
@@ -352,6 +348,8 @@ ul{
     font-size: 18px;
     line-height: 150%;
 }
+
+/* Секция о Tehnikum */
 .InfoAU{
     display: flex;
     flex-wrap: wrap;
@@ -382,6 +380,102 @@ ul{
 .InformGrad .Grad span{
     margin-top: 8px;
 }
+
+/* Слайдер фото */
+.slider h2{
+    width: calc(328px + (855 - 328) * ((100vw - 376px) / (1280 - 375)));
+}
+.slider p{
+    width: calc(328px + (748 - 328) * ((100vw - 376px) / (1280 - 375)));
+    margin:calc(20px + (24 - 20) * ((100vw - 376px) / (1280 - 375))) 0;
+}
+.photos{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+.photos img{
+    width: calc(328px + (507 - 328) * ((100vw - 376px) / (1280 - 375)));
+    height: calc(328px + (507 - 328) * ((100vw - 376px) / (1280 - 375)));
+}
+
+
+/* форма заявки внизу страницы */
+.application{
+    background-color: #222;
+    display: flex;
+    flex-direction: row;
+    gap: 88px 140px;
+    flex-wrap: wrap;
+    color:#fff;
+}
+.register{
+    width: calc(328px + (475 - 328) * ((100vw - 376px) / (1280 - 375)));
+}
+.regText {
+    margin-top: calc(40px + (80 - 40) * ((100vw - 376px) / (1280 - 375)));
+}
+.register h2{
+    width: calc(328px + (424 - 328) * ((100vw - 376px) / (1280 - 375)));
+    margin: calc(40px + (80 - 40) * ((100vw - 376px) / (1280 - 375))) 0;
+}
+.txt{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom:calc(20px + (24 - 20) * ((100vw - 376px) / (1280 - 375)));
+}
+.txt img{
+    align-self:center;
+    width:28px;
+    height: 28px;
+    margin-right: 20px;
+}
+.txt p{
+    margin: 0;
+}
+.regText{
+    margin-bottom:calc(44px + (187 - 44) * ((100vw - 376px) / (1280 - 375)));
+ 
+}
+.registerForm{
+    margin:calc(44px + (100 - 44) * ((100vw - 376px) / (1280 - 375))) 0
+    calc(59px + (80 - 59) * ((100vw - 376px) / (1280 - 375))) 0 ;
+}
+.Rgform{
+    background-color:#FFFFFF;
+    color:#222222;
+    text-align: center;
+    padding: 60px calc(30px + (69 - 30) * ((100vw - 376px) / (1280 - 375)));
+    border-radius:12px;
+}
+.Rgform h4{
+    font-size: calc(26px + (30 - 26) * ((100vw - 376px) / (1280 - 375)));
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 118%;
+}
+.Rgform span{
+    font-size: 21px;
+    line-height: 140%;
+    text-align: center;
+    margin: 10px 0 30px;
+}
+.havequestion{
+    width: calc(271px + (353 - 271) * ((100vw - 376px) / (1280 - 375)));
+    opacity: 50%;
+}
+.havequestion h5 , .havequestion p{
+    font-size: 18px;
+    line-height: 118%;
+    margin: 0;
+}
+.havequestion h5{
+    margin-bottom: 10px;
+}
+
+
 /* Всплывающее окно */
 .wrapper{
     position: fixed;
@@ -420,7 +514,7 @@ ul{
     line-height: 118%;
     margin-bottom:30px;
 }
-.form input{
+.form input ,.Rgform input{
     display: block;
     width: 100%;
 
@@ -434,8 +528,10 @@ ul{
     padding: 10px 0;
 }
 
-.form button{
-    margin-top: 30px;
+.form button , .Rgform button{
+    margin: 30px 0 40px;
+    width: calc(267px + (328 - 267) * ((100vw - 376px) / (1280 - 375)));
+
 }
 .thankYouPage{
     background: #222222;
