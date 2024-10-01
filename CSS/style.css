@@ -559,11 +559,6 @@ ul{
     margin-bottom: 10px;
 }
 /* ----- медиа запросы ----- */
-@media (max-width:1200px) {
- .application{
-    flex-wrap: wrap;
- }
-}
 @media screen and (min-width : 900px)
 {
 .DiplomaContainer{
@@ -620,7 +615,7 @@ ul{
         padding-bottom: 0;
     }
 }
-@media  (min-width : 600px) {
+@media  (min-width : 1200px) {
     .circle{
         position: absolute;
         width: calc(105px + (159 - 105) * ((100vw - 376px) / (1280 - 375)));
@@ -633,13 +628,16 @@ ul{
         display: flex;
         justify-content: center;
     }
-    .circle p{
+    .circle .circleText{
         font-size: 63px;
         font-weight: 700;
         line-height: 74.21px;
     }
 }
-@media  (max-width : 600px) {
+@media  (max-width :1200px) {
+    .application{
+        flex-wrap: wrap;
+     }
     .circle{
         position: absolute;
         width: calc(105px + (159 - 105) * ((100vw - 376px) / (1280 - 375)));
@@ -651,10 +649,12 @@ ul{
         border-radius:100%;
         display: flex;
         justify-content: center;
+        align-items:center;
     }
-    .circle p{
+    .circle .circleText{
         font-size: 40px;
         font-weight: 700;
-        line-height: 47.12px;     
+        line-height: 47.12px;
+        margin: 0;     
     }
 }
