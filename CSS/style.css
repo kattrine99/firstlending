@@ -12,8 +12,8 @@ body{
 section{
     padding: 0 calc(24px + (121 - 24) * ((100vw - 376px) / (1280 - 375)));
     margin-bottom: calc(11vw + 18.6px);
-    
 }
+
 
 /*Окно о курсе, вводное окно*/
 section.hello{
@@ -409,6 +409,7 @@ ul{
     gap: 88px 140px;
     flex-wrap: wrap;
     color:#fff;
+    margin-bottom: 0;
 }
 .register{
     width: calc(328px + (475 - 328) * ((100vw - 376px) / (1280 - 375)));
@@ -440,6 +441,7 @@ ul{
  
 }
 .registerForm{
+    position: relative;
     margin:calc(44px + (100 - 44) * ((100vw - 376px) / (1280 - 375))) 0
     calc(59px + (80 - 59) * ((100vw - 376px) / (1280 - 375))) 0 ;
 }
@@ -474,8 +476,6 @@ ul{
 .havequestion h5{
     margin-bottom: 10px;
 }
-
-
 /* Всплывающее окно */
 .wrapper{
     position: fixed;
@@ -607,5 +607,43 @@ ul{
     .Lessons li:last-child{
         border: 0;
         padding-bottom: 0;
+    }
+}
+@media  (min-width : 600px) {
+    .circle{
+        position: absolute;
+        width: calc(105px + (159 - 105) * ((100vw - 376px) / (1280 - 375)));
+        height: calc(105px + (159 - 105) * ((100vw - 376px) / (1280 - 375)));
+        top: -61px;
+        left: -67px;
+    
+        background-color:#6E3ABA;
+        border-radius:100%;
+        display: flex;
+        justify-content: center;
+    }
+    .circle p{
+        font-size: 63px;
+        font-weight: 700;
+        line-height: 74.21px;
+    }
+}
+@media  (max-width : 600px) {
+    .circle{
+        position: absolute;
+        width: calc(105px + (159 - 105) * ((100vw - 376px) / (1280 - 375)));
+        height: calc(105px + (159 - 105) * ((100vw - 376px) / (1280 - 375)));
+        top: -50px;
+        right: -20px;
+
+        background-color:#6E3ABA;
+        border-radius:100%;
+        display: flex;
+        justify-content: center;
+    }
+    .circle p{
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 47.12px;     
     }
 }

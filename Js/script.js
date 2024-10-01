@@ -46,6 +46,7 @@ let popUp = document.querySelector(".wrapper .popUp");
 let typ = document.querySelector(".wrapper .thankYouPage");
 let btns = document.querySelectorAll("section button");
 let formBtn =document.querySelector(".form button");
+let regBtn = document.querySelector(".Reg button");
 let username = document.getElementsByName("username")[0];
 let userphone = document.getElementsByName("userphone")[0];
 
@@ -71,6 +72,8 @@ function hidepopUp(){
     }
 }
 formBtn.addEventListener("click", sentForm);
+regBtn.addEventListener("click",sentForm);
+
 function sentForm(){
     event.preventDefault();
     if(username.value.length > 1){
