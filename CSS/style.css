@@ -407,7 +407,6 @@ ul{
     display: flex;
     flex-direction: row;
     gap: 88px 140px;
-    flex-wrap: wrap;
     color:#fff;
     margin-bottom: 0;
 }
@@ -560,6 +559,11 @@ ul{
     margin-bottom: 10px;
 }
 /* ----- медиа запросы ----- */
+@media (max-width:1200px) {
+ .application{
+    flex-wrap: wrap;
+ }
+}
 @media screen and (min-width : 900px)
 {
 .DiplomaContainer{
