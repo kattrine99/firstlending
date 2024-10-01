@@ -446,11 +446,15 @@ ul{
     calc(59px + (80 - 59) * ((100vw - 376px) / (1280 - 375))) 0 ;
 }
 .Rgform{
+    height:calc(529px + (600 - 529) * ((100vw - 376px) / (1280 - 375)));
     background-color:#FFFFFF;
     color:#222222;
     text-align: center;
     padding: 60px calc(30px + (69 - 30) * ((100vw - 376px) / (1280 - 375)));
     border-radius:12px;
+}
+.Rgform form {
+    margin-top: 30px;
 }
 .Rgform h4{
     font-size: calc(26px + (30 - 26) * ((100vw - 376px) / (1280 - 375)));
@@ -462,17 +466,19 @@ ul{
     font-size: 21px;
     line-height: 140%;
     text-align: center;
-    margin: 10px 0 30px;
+    margin-top: 10px;
 }
 .havequestion{
+    margin-top: 40px;
     width: calc(271px + (353 - 271) * ((100vw - 376px) / (1280 - 375)));
     opacity: 50%;
 }
 .havequestion h5 , .havequestion p{
     font-size: 18px;
-    line-height: 118%;
+    line-height: 21.2px;
     margin: 0;
 }
+
 .havequestion h5{
     margin-bottom: 10px;
 }
@@ -526,6 +532,7 @@ ul{
     font-size: 18px;
     line-height: 27px;
     padding: 10px 0;
+    margin-top: 23px;
 }
 
 .form button , .Rgform button{
