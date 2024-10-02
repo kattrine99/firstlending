@@ -400,7 +400,12 @@ ul{
     height: calc(328px + (507 - 328) * ((100vw - 376px) / (1280 - 375)));
 }
 
-
+.swiper img{
+    width: 100%;
+}
+#swiper2 img {
+    width: 80px;
+}
 /* форма заявки внизу страницы */
 .application{
     background-color: #222;
